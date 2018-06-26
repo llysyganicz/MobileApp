@@ -148,7 +148,7 @@ namespace MobileApp.Client
                 try
                 {
                     // Login with the identity provider.
-                    var user = await App.MobileClient.LoginAsync(provider, "mobilenotes");
+                    var user = await App.MobileClient.LoginAsync(provider, "{app-name}");
 
                     // Create and store the user credentials.
                     credential = new PasswordCredential(provider.ToString(), user.UserId, user.MobileServiceAuthenticationToken);
